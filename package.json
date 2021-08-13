@@ -1,24 +1,31 @@
 {
-  "name": "nova",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon  --exec \"ts-node \" index.ts"
-  },
-  "keywords": [
-    "node",
-    "push"
-  ],
-  "author": "ruobeiming",
-  "license": "ISC",
-  "dependencies": {
-    "koa": "^2.13.1",
-    "ts-node": "^10.2.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.12",
-    "typescript": "^4.3.5"
-  }
+    "name": "nova",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon  --exec \"ts-node \" index.ts"
+    },
+    "lint-staged": {
+        "**/*": "prettier --write --ignore-unknown"
+    },
+    "keywords": [
+        "node",
+        "push"
+    ],
+    "author": "ruobeiming",
+    "license": "ISC",
+    "dependencies": {
+        "koa": "^2.13.1",
+        "ts-node": "^10.2.0"
+    },
+    "devDependencies": {
+        "eslint-config-prettier": "^8.3.0",
+        "husky": "^7.0.1",
+        "lint-staged": "^11.1.2",
+        "nodemon": "^2.0.12",
+        "prettier": "2.3.2",
+        "typescript": "^4.3.5"
+    }
 }
