@@ -9,4 +9,6 @@ app.use(async ctx => {
     }
 });
 
+console.log('hello world');
+
 app.listen(3000);

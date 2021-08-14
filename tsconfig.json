@@ -1,9 +1,9 @@
 {
-  "compilerOptions": {
-    "module": "CommonJS", // or ES2015, ES2020
-    "baseUrl": "./",
-    "lib": ["ES2015"]
-  },
-  "include": ["src/**/*","./index.ts"],
-  "exclude": ["node_modules/*"],
+    "compilerOptions": {
+        "module": "CommonJS", // or ES2015, ES2020
+        "baseUrl": "./",
+        "lib": ["ES2015", "DOM"]
+    },
+    "include": ["src/**/*", "./index.ts"],
+    "exclude": ["node_modules/*"]
 }

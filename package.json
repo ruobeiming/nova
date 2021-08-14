@@ -5,10 +5,14 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "nodemon  --exec \"ts-node \" index.ts"
+        "start": "nodemon  --exec \"ts-node \" index.ts",
+        "prepare": "husky install",
+        "precommit": "lint-staged"
     },
     "lint-staged": {
-        "**/*": "prettier --write --ignore-unknown"
+        "*": [
+            "prettier --write"
+        ]
     },
     "keywords": [
         "node",
@@ -22,7 +26,7 @@
     },
     "devDependencies": {
         "eslint-config-prettier": "^8.3.0",
-        "husky": "^7.0.1",
+        "husky": "^7.0.0",
         "lint-staged": "^11.1.2",
         "nodemon": "^2.0.12",
         "prettier": "2.3.2",
